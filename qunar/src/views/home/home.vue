@@ -5,6 +5,7 @@
         <Iconst :iconsList='iconsList'/>
         <Hotlist :hotList='hotList' />
         <Guess :likeList='likeList' />
+        <Wekend :vacationList='vacationList' />
   </div>
 </template>
 <script>
@@ -15,6 +16,7 @@ import Swipe from './page/swipe'
 import Iconst from './page/iconst'
 import Hotlist from './page/hotlist'
 import Guess from './page/guess'
+import Wekend from './page/wekend'
 
 export default {
     props:{
@@ -26,7 +28,8 @@ export default {
         Swipe,
         Iconst,
         Hotlist,
-        Guess
+        Guess,
+        Wekend
     },
     data(){
         return {
@@ -34,7 +37,7 @@ export default {
         }
     },
     computed:{
-        ...mapState(['city','swiperList','iconsList','hotList','likeList']),
+        ...mapState(['city','swiperList','iconsList','hotList','likeList','vacationList']),
 
     },
     methods:{
@@ -48,10 +51,10 @@ export default {
     }
 }
 </script>
-<style scoped lang="">
+<style lang="">
 .home{
     width: 100%;
-    /* height: auto; */
-    overflow-y: auto;
+    height: auto;
+    overflow-y: scroll;
 }
 </style>

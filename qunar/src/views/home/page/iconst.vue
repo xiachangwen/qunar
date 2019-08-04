@@ -63,6 +63,8 @@ export default {
 <style scoped lang="">
 .iconts{
     width: 100%;
+    padding-top: 0.8rem;
+    background: #fff;
 }
 
 .swiper-slide {

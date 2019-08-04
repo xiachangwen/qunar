@@ -2,7 +2,7 @@
     <div class='head'>
         <p><i class="iconfont icon-chevron-thin-left"></i></p>
         <span></span>
-        <div>{{city}} <i class="iconfont icon-triangle-down"></i></div>
+        <div @click="clickfn">{{city}} <i class="iconfont icon-triangle-down"></i></div>
     </div>
 </template>
 <script>
@@ -19,16 +19,20 @@ export default {
         }
     },
     computed:{
-
+       
     },
     methods:{
-
+        clickfn(){
+            this.$router.push({
+                path:'/city'
+            })
+        }
     },
     created(){
 
     },
     mounted(){
-
+        
     }
 }
 </script>

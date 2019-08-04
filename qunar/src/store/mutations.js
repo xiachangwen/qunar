@@ -9,6 +9,7 @@ const mutations = {
         state.iconsList = resd.iconsList
         state.hotList = resd.hotList
         state.likeList = resd.likeList
+        state.vacationList = resd.vacationList
     }
 }
 

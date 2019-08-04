@@ -3,7 +3,8 @@ const state = {
     swiperList : [],
     iconsList : [],
     hotList : [],
-    likeList : []
+    likeList : [],
+    vacationList : []
 }
 
 export default state
