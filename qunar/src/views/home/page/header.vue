@@ -2,13 +2,13 @@
     <div class='head'>
         <p><i class="iconfont icon-chevron-thin-left"></i></p>
         <span></span>
-        <div>上海 <i class="iconfont icon-triangle-down"></i></div>
+        <div>{{city}} <i class="iconfont icon-triangle-down"></i></div>
     </div>
 </template>
 <script>
 export default {
     props:{
-
+        city:String,
     },
     components:{
 

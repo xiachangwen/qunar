@@ -7,31 +7,31 @@
 			"swiperList":[
 				{
 					"id":"01",
-					"imgUrl":"/src/image/1.jpg"
+					"imgUrl":"1.jpg"
 				},
 				{
 					"id":"02",
-					"imgUrl":"/src/image/2.jpg"
+					"imgUrl":"2.jpg"
 				},
 				{
 					"id":"03",
-					"imgUrl":"/src/image/3.jpg"
+					"imgUrl":"3.jpg"
 				},
 				{
 					"id":"04",
-					"imgUrl":"/src/image/4.jpg"
+					"imgUrl":"4.jpg"
 				},
 				{
 					"id":"05",
-					"imgUrl":"/src/image/5.jpg"
+					"imgUrl":"5.jpg"
 				},
 				{
 					"id":"06",
-					"imgUrl":"/src/image/6.jpg"
+					"imgUrl":"6.jpg"
 				},
 				{
 					"id":"07",
-					"imgUrl":"/src/image/7.jpg"
+					"imgUrl":"7.jpg"
 				}
 			],
 			"iconsList":[
@@ -162,15 +162,31 @@
 			"swiperList":[
 				{
 					"id":"01",
-					"imgUrl":"/api/img/swiper1.jpg"
+					"imgUrl":"1.jpg"
 				},
 				{
 					"id":"02",
-					"imgUrl":"/api/img/swiper2.jpg"
+					"imgUrl":"2.jpg"
 				},
 				{
 					"id":"03",
-					"imgUrl":"/api/img/swiper3.jpg"
+					"imgUrl":"3.jpg"
+				},
+				{
+					"id":"04",
+					"imgUrl":"4.jpg"
+				},
+				{
+					"id":"05",
+					"imgUrl":"5.jpg"
+				},
+				{
+					"id":"06",
+					"imgUrl":"6.jpg"
+				},
+				{
+					"id":"07",
+					"imgUrl":"7.jpg"
 				}
 			],
 			"iconsList":[

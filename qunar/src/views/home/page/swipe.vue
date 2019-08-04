@@ -1,17 +1,18 @@
 <template>
     <div class="swipe">
-        <swiper :options="swiperOption" ref="mySwiper" @someSwiperEvent="callback">
+        <swiper :options="swiperOption" ref="mySwiper">
             <!-- slides -->
-            <swiper-slide><img src="http://pic41.nipic.com/20140524/9643307_104442624152_2.jpg"/></swiper-slide>
+            <swiper-slide v-for="(item,index) in swiperList" :key='index'><img :src="require('../../../image/'+item.imgUrl)"/></swiper-slide>
             <!-- Optional controls -->
             <div class="swiper-pagination"  slot="pagination"></div>
         </swiper>
+        <!-- {{data.swiperList}} -->
     </div>
 </template>
 <script>
 export default {
     props:{
-
+        swiperList:Array
     },
     components:{
 
@@ -24,16 +25,13 @@ export default {
                 pagination: {
                     el: '.swiper-pagination'
                 }
-            },
-            callback:{
-
             }
         }
     },
     computed:{
-        swiper() {
-            return this.$refs.mySwiper.swiper
-        }
+        // swiper() {
+        //     return this.$refs.mySwiper.swiper
+        // }
     },
     methods:{
 
@@ -42,11 +40,10 @@ export default {
 
     },
     mounted(){
-        this.$axios.get('/api/homeData.json').then((res) => {
-            console.log(res)
-        })
+       
+         
         // console.log('this is current swiper instance object', this.swiper)
-        this.swiper.slideTo(1, 1000, false)
+        // this.swiper.slideTo(1, 1000, false)
     }
 }
 </script>
@@ -54,6 +51,7 @@ export default {
 .swipe{
     width: 100%;
     height: 2rem;
+    padding-bottom: 0.6rem;
 }
 .swipe .swiper-container .swiper-slide{
     width: 100%;
@@ -62,6 +60,12 @@ export default {
 
 .swiper-container .swiper-slide img{
     width: 100%;
-    height: 100px;
+}
+
+/* .swiper-pagination  /deep/ .swiper-pagination-bullet-active{
+    background: #fff;
+} */
+.swiper-pagination  >>> .swiper-pagination-bullet-active{
+    background: #fff;
 }
 </style>
